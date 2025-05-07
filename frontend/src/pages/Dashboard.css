@@ -1,0 +1,117 @@
+.dashboard-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.elections-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.election-card {
+  background: var(--card-bg, #fff);
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.election-card:hover {
+  transform: translateY(-2px);
+}
+
+.election-card h2 {
+  margin: 0 0 1rem;
+  color: var(--text-primary, #333);
+}
+
+.election-card p {
+  color: var(--text-secondary, #666);
+  margin-bottom: 1rem;
+}
+
+.candidates-list {
+  margin-top: 1rem;
+}
+
+.candidate-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  border-bottom: 1px solid var(--border-color, #eee);
+}
+
+.candidate-item:last-child {
+  border-bottom: none;
+}
+
+.vote-button {
+  background: var(--primary-color, #007bff);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.vote-button:hover {
+  background: var(--primary-dark, #0056b3);
+}
+
+.results {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-color, #eee);
+}
+
+.result-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+}
+
+.error-message {
+  background: var(--error-bg, #fee);
+  color: var(--error-text, #c00);
+  padding: 1rem;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.success-message {
+  background: var(--success-bg, #efe);
+  color: var(--success-text, #0c0);
+  padding: 1rem;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .election-card {
+    --card-bg: #2d2d2d;
+    --text-primary: #fff;
+    --text-secondary: #ccc;
+    --border-color: #444;
+  }
+
+  .vote-button {
+    --primary-color: #0d6efd;
+    --primary-dark: #0a58ca;
+  }
+
+  .error-message {
+    --error-bg: #442;
+    --error-text: #f88;
+  }
+
+  .success-message {
+    --success-bg: #242;
+    --success-text: #8f8;
+  }
+} 
