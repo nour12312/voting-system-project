@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Secure Voting System
 
 A modern, secure web application for conducting online elections with robust authentication and real-time result tracking.
@@ -107,3 +108,6 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 Your Name - your.email@example.com
 Project Link: https://github.com/yourusername/voting-system 
+=======
+# voting-system-project
+>>>>>>> 9bd4f7b0a826cd7ac736c6f324fc13536faad980
